@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Dashboard</title>
+     <link rel="stylesheet" href="./assets/css/style.css" />
+     <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+     <div class="dashboard">
+          <div class="sideNav">
+               <img src="./assets/images/others/logo.svg" alt="" />
+               <ul class="navList">
+                    <li class="listItem">
+                         <img src="./assets/images/icons/dashboardIcon.svg" alt="dashboardIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Dashboard</a>
+                    </li>
+                    <li class="listItem">
+                         <img src="./assets/images/icons/lookupIcon.svg" alt="lookupIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Lookup</a>
+                    </li>
+                    <li class="listItem">
+                         <img src="./assets/images/icons/filesIcon.svg" alt="filesIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Files</a>
+                    </li>
+                    <li class="listItem">
+                         <img src="./assets/images/icons/logIcon.svg" alt="logIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Logs</a>
+                    </li>
+                    <ul class="subNavList">
+                         <li class="listItem">
+                              <img src="./assets/images/icons/singleLookupIcon.svg" alt="singleLookupIcon" class="menuIcon"/>
+                              <a href="#" class="menuName">Single/Bulk Lookup</a>
+                         </li>
+                         <li class="listItem">
+                              <img src="./assets/images/icons/dailyUsageIcon.svg" alt="dailyUsageIcon" class="menuIcon"/>
+                              <a href="#" class="menuName">Daily Usages</a>
+                         </li>
+                    </ul>
+                    <li class="listItem">
+                         <img src="./assets/images/icons/buyCreditsIcon.svg" alt="buyIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Buy Credits</a>
+                    </li>
+                    <li class="listItem">
+                         <img src="./assets/images/icons/integrationIcon.svg" alt="integrationIcon" class="menuIcon" />
+                         <a href="#" class="menuName">Integrations</a>
+                    </li>
+                    <li class="listItem active">
+                         <img src="./assets/images/icons/profileIcon.svg" alt="profileIcon" class="menuIcon" />
+                         <a href="#" class="menuName">My Profile</a>
+                    </li>
+               </ul>
+          </div>
+          <div class="mainBody">
+               <header class="header">
+                    <div class="headerMenu">
+                         <h2 class="balanceInquery">
+                              Balance: <span class="mainBalance">$125</span>
+                         </h2>
+                         <div class="dropdown closed">
+                              <div class="dropdownContent">
+                                   <img src="./assets/images/others/avater.png" alt="avater" class="dropdownAvater" />
+                                   <h2 class="userName">Alexa Jui</h2>
+                                   <img src="./assets/images/icons/dropdownIcon.svg" alt="dropdownIcon"
+                                        class="dropdownIcon" />
+                              </div>
+                              <div class="dropdownMenuList openMargin">
+                                   <ul>
+                                        <li class="dropdownMenuItem">My Profile</li>
+                                        <li class="dropdownMenuItem">Add Fund</li>
+                                        <li class="dropdownMenuItem">API Documentation</li>
+                                        <li class="dropdownMenuItem">Log Out</li>
+                                   </ul>
+
+                                   <button class="logoutBtn">
+                                        <img src="./assets/images/icons/logoutIcon.svg" alt="logoutIcon" />
+                                        Log Out
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </header>
+               <div class="bodyContent">
+                    <div class="profileInfo">
+                         <div class="aboutUser">
+                              <img src="./assets/images/others/avater.png" alt="" class="userAvater" />
+                              <div class="userInfo">
+                                   <h2 class="userName">Alexa Jui</h2>
+                                   <p>alexajui@gmail.com</p>
+                                   <p>+1 354 785 4125</p>
+                                   <p>3213 D Street, Columbus, USA</p>
+                              </div>
+                         </div>
+                         <div class="cardSection">
+                              <h2 class="sectionTitle">Your Credit Cards</h2>
+                              <div class="allCards">
+                                   <div class="singleCard">
+                                        <button class="cardAction">
+                                             <img src="./assets/images/icons/deleteIcon.svg" alt="" />
+                                        </button>
+                                        <div class="cardInfo">
+                                             <h2 class="cardName">Credit Card 1</h2>
+                                             <h2 class="cardNumber">xxxxxxxxxxxx4684</h2>
+                                        </div>
+                                   </div>
+                                   <div class="singleCard active">
+                                        <button class="cardAction">
+                                             <img src="./assets/images/icons/deleteIcon.svg" alt="" />
+                                        </button>
+                                        <div class="cardInfo">
+                                             <h2 class="cardName">Credit Card 2 (Default)</h2>
+                                             <h2 class="cardNumber">xxxxxxxxxxxx4242</h2>
+                                        </div>
+                                   </div>
+                                   <div class="singleCard">
+                                        <button class="cardAction">
+                                             <img src="./assets/images/icons/deleteIcon.svg" alt="" />
+                                        </button>
+                                        <div class="cardInfo">
+                                             <h2 class="cardName">Credit Card 3</h2>
+                                             <h2 class="cardNumber">xxxxxxxxxxxx1254</h2>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="profileInfoTab">
+                         <ul class="tabName">
+                              <li class=""><a href="#tab-1">Update Profile</a></li>
+                              <li class=""><a href="#tab-2">Change Password</a></li>
+                              <li class="active"><a href="#tab-3">Email Notifications</a></li>
+                              <li class=""><a href="#tab-4">Auto Recharge Settings</a></li>
+                         </ul>
+                         <div class="tabContent">
+                              <div id="tab-1" class="tabData">
+                                   <h3>Update Profile Design</h3>
+                              </div>
+                              <div id="tab-2" class="tabData">
+                                   <h3>Change password Design</h3>
+                              </div>
+                              <div id="tab-3" class="tabData active">
+                                   <form>
+                                        <div class="checkedAction">
+                                             <div class="singleLabel">
+                                                  <label for="switch1" class="switchLabel switchLabelPostBack">
+                                                       <input class="switchInput" type="checkbox" id="switch1" checked />
+                                                       <span class="switchBox switchBoxPostBack"></span>
+                                                  </label>
+                                                  <h2 class="labelData">Notify me when list verification completes</h2>
+                                             </div>
+          
+                                             <div class="singleLabel">
+                                                  <label for="switch2" class="switchLabel switchLabelPreBack">
+                                                       <input class="switchInput" type="checkbox" id="switch2" />
+                                                       <span class="switchBox switchBoxPreBack"></span>
+                                                  </label>
+                                                  <h2 class="labelData uncheckedSwitchLabel">Notify me when list export completes</h2>
+                                             </div>
+          
+                                             <div class="singleLabel">
+                                                  <label for="switch3" class="switchLabel switchLabelPostBack">
+                                                       <input class="switchInput" type="checkbox" id="switch3" checked />
+                                                       <span class="switchBox switchBoxPostBack"></span>
+                                                  </label>
+                                                  <h2 class="labelData">Notify me when list verification result is about to expire</h2>
+                                             </div>
+     
+                                             <hr class="divider">
+                                             
+                                             <div class="singleLabel">
+                                                  <label for="switch4" class="switchLabel switchLabelPostBack">
+                                                       <input class="switchInput" type="checkbox" id="switch4" checked />
+                                                       <span class="switchBox switchBoxPostBack"></span>
+                                                  </label>
+                                                  <h2 class="labelData">Receive Low Credits Email</h2>
+                                             </div>
+                                             
+                                             <div class="lowCreditSection">
+                                                  <div class="lowCreditInput">
+                                                       <label for="email">Send Email to <span>*</span></label> <br>
+                                                       <input type="email" id="email" placeholder="alexajui@gmail.com">
+                                                  </div>
+                                                  <div class="lowCreditInput">
+                                                       <label for="number">When credits are less than <span>*</span></label> <br>
+                                                       <input type="number" id="number" placeholder="50">
+                                                  </div>
+                                             </div>
+     
+                                             <hr class="divider">
+     
+                                             <button type="submit" class="saveBtn">Save Changes</button>
+                                        </div>
+                                   </form>
+                              </div>
+                              <div id="tab-4" class="tabData">
+                                   <h3>Auto Recharge Settings Design</h3>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
